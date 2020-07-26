@@ -1,0 +1,48 @@
+.contact {
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 10vh;
+}
+
+.socialLinks {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url(src/assets/images/rose.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #E7E7E7;
+    justify-content: center;
+    align-items: center;
+}
+
+i {
+    font-size: 33px;
+    margin-right: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+.telnmail:hover .fas {
+    font-size: 0px;
+    color: #007bff;
+    transition: all 1s ease;
+}
+
+.telnmail:hover::after {
+    content: attr(data-hover);
+    font-size: 22px;
+    color: #007bff;
+}
+
+.mail {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

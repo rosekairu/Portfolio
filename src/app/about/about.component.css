@@ -1,0 +1,20 @@
+.about {
+    font-family: 'Philosopher', sans-serif;
+}
+
+.card {
+    width: 7.5rem;
+    border: none;
+    margin: 30px;
+}
+
+.skillIcon {
+    max-width: 4rem;
+    max-height: 4rem;
+    align-self: center;
+}
+
+.card-body {
+    padding-top: 1rem;
+    text-align: center;
+}

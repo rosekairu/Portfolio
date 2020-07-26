@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a href="#home" class="navbar-brand">
+        <img src="assets/images/portfolio.png" alt="rosekairu" class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+
+        <div class="navbar-nav ml-auto">
+
+            <a href="#home" class="nav-item nav-link toggleOnHover" data-hover="Home">
+                <span> <i class='fas fa-home'> </i> Home </span>
+                <span class="sr-only">(current)</span>
+            </a>
+
+            <a href="#about" class="nav-item nav-link toggleOnHover" data-hover="About RoseKairu">
+                <span> <i class='fas fa-user'></i> Tech Skills </span>
+            </a>
+
+            <a href="#projects" class="nav-item nav-link toggleOnHover" data-hover="Projects">
+                <span> <i class='fas fa-laptop-code'></i> Recent Work </span>
+            </a>
+
+            <!-- <a href="#blog" class="nav-item nav-link toggleOnHover" data-hover="Blog"> 
+        <span> <i class='fas fa-edit'></i> Blog </span> 
+        </a> -->
+
+            <a href="#contact" class="nav-item nav-link toggleOnHover" data-hover="Contact Me">
+                <span> <i class='fas fa-envelope'></i> Contact </span>
+            </a>
+
+        </div>
+    </div>
+</nav>

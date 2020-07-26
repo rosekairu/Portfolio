@@ -1,0 +1,118 @@
+.projects {
+    position: relative;
+    margin-top: 10vh;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.row {
+    margin-bottom: 2vh;
+}
+
+.projectCard {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+    color: #000;
+    font-size: medium;
+}
+
+.projectLink {
+    width: 100px;
+    border-radius: 75px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    transition: all .35s;
+}
+
+.projectLink span {
+    position: relative;
+    z-index: 1;
+}
+
+.projectLink::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #007bff;
+    border-radius: 75px;
+    transition: all .4s ease-in-out;
+}
+
+.projectLink:hover {
+    color: white;
+}
+
+.projectLink:hover::after {
+    width: 100%;
+}
+
+.outterColumn {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+    float: left;
+}
+
+.projectColumn {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+.projectContent {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.projectColumn:hover .projectContent {
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    border-radius: 10px;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    transform: rotateY( 180deg);
+}
+
+.frontText,
+.backText {
+    align-self: flex-end;
+}
+
+.projectImg {
+    height: 100%;
+    height: 100%;
+    object-fit: contain;
+}

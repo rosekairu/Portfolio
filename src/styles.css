@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+html {
+    scroll-behavior: smooth;
+    /* font-family: 'Nunito', sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Philosopher', sans-serif;
+    margin-top: 10vh;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.about {
+    margin-top: 100px;
+    padding-top: 120px;
+}
+
+.projects,
+.techTalks {
+    padding-top: 100px;
+}
+
+.contact {
+    padding-top: 100px;
+}
+
+@media(width:360px) {
+    .home {
+        margin-top: 30px;
+        overflow-x: hidden;
+    }
+    .avatar {
+        height: 175px;
+        width: 175px;
+    }
+}
+
+@media(width:375px) {
+    .home {
+        margin-top: 25px;
+        overflow-x: hidden;
+    }
+}

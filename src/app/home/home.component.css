@@ -1,0 +1,107 @@
+.home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(src/assets/images/BgOne.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.introimg {
+    align-self: center;
+}
+
+.avatar {
+    height: 250px;
+    width: 250px;
+}
+
+.intro {
+    color: #000300;
+    text-align: left;
+}
+
+.seeMore {
+    border-radius: 40px;
+    padding-right: 33px;
+    padding-left: 33px;
+    transition: all 0.2s;
+    border: #000;
+}
+
+.seeMore:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.seeMore span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.seeMore span:after {
+    font-family: FontAwesome;
+    content: '\f103';
+    font-weight: bold;
+    font-size: x-large;
+    color: #fff;
+    position: absolute;
+    opacity: 0;
+    top: -5px;
+    right: -20px;
+    transition: 0.7s;
+}
+
+.seeMore:hover span {
+    padding-right: 20px;
+}
+
+.seeMore:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media(max-width:415px) {
+    .homerow {
+        text-align-last: center;
+    }
+}
+
+@media(width:320px) {
+    .home {
+        margin-top: 27px;
+    }
+    .avatar {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media(width:360px) {
+    .avatar {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media(min-width:768px) {
+    .intro {
+        font-size: large;
+    }
+}
+
+@media(width:768px) {
+    .home {
+        height: 675px;
+    }
+}
+
+@media(width:1024px) and (height:1366px) {
+    .home {
+        height: 900px;
+    }
+}
